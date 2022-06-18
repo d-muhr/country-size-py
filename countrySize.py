@@ -1,20 +1,24 @@
 '''Potential To-Dos
 
 --------------
-- (((CURRENTLY IMPOSSIBLE TODO: ideally the 2nd choice would not include the country/entity of the first
-choice (currently when you choose the same country/entity twice, the program will just exit)
-o I tried it by using blacklistRegex but it did not work because it did complains that "blacklistRegexes" ist not defined:
-result = pyip.inputStr('Favorite animal> ', blacklistRegexes=['moose'])_30.4.22
-o I also tried to create a list and let pyip make use of the list, which die not work either because it did not recognize the list_30.4.22)))
-
+- (((CURRENTLY IMPOSSIBLE TODO: ideally the 2nd choice would not include 
+the country/entity of the first choice (currently when you choose the 
+same country/entity twice, the program will just exit)
+o I tried it by using blacklistRegex but it did not work because it did 
+complain that "blacklistRegexes" is not defined: "result = 
+pyip.inputStr('Favorite animal> ', blacklistRegexes=['moose'])"_30.4.22
+o I also tried to create a list and let pyip make use of the list, 
+which die not work either because it did not recognize the 
+list_30.4.22)))
 ----------
 
 '''
 
 import pyinputplus as pyip
 
-'''These are 15 countries and entities with their size in square kilometers.
-A Dictionary is used to transform user-inputs into the area of the countries or entities'''
+'''These are 15 countries and entities with their size in square 
+kilometers. A Dictionary is used to transform user-inputs into the area 
+of the countries or entities'''
 
 size_dict = {"China": 9596961,
              "Egypt": 1002450,
@@ -54,9 +58,10 @@ Let's start with the first one.''')
 
 
 '''
-(((CURRENTLY IMPOSSIBLE TODO: Add a prompt like ">>>" to make sure the user sees where he/she needs to type.
-It does however unfortunately not work, because no matter where I put it, either
-it does not work, or the ">>> " is put only in in front of China. _30.4.22)))
+(((CURRENTLY IMPOSSIBLE TODO: Add a prompt like ">>>" to make sure the 
+user sees where he/she needs to type. It does however unfortunately not 
+work, because no matter where I put it, either it does not work, or the
+">>> " is put only in in front of China. _30.4.22)))
 '''
 # The user choses the first country or entity to be compared.
 choice_1_input = pyip.inputMenu(['China', 'Egypt', 'Germany', 'Japan',
@@ -146,12 +151,17 @@ print(
 
 
 '''
-(((CURRENTLY IMPOSSIBLE-TODO: ideally the comparison factor would also have a "," in e.g. "1,000" instead of "1000")))
-however it did not work out (see "v82_NOPE_TRYINGcomparisonFactorWithAcommaAfter3Digits_UNFORTUNATELYnowThereAreNotOnly2DigitsAfterComma_2"
-and the ca. 4 versions before. The problem was that either only the "," aspect works or only the 2 digits after comma aspect, even
-though I tried different options with the format etc._30.4.22
+(((CURRENTLY IMPOSSIBLE-TODO: ideally the comparison factor would also 
+have a "," in e.g. "1,000" instead of "1000"))) however it did not work 
+out (see "v82_NOPE_TRYINGcomparisonFactorWithAcommaAfter3Digits_
+UNFORTUNATELYnowThereAreNotOnly2DigitsAfterComma_2"
+and the ca. 4 versions before. The problem was that either only the "," 
+aspect works or only the 2 digits after comma aspect, even though I 
+tried different options with the format etc._30.4.22
 '''
 
-'''TODO: adjust it into a while loop and make it possible to ask another question again and again.
-One option might be to ask the user at the end if he she/ wants to ask another question or quit the program.
-I did something similar in my loveletter-game so I can probably adjust the way I did it there'''
+'''TODO: adjust it into a while loop and make it possible to ask another 
+question again and again. One option might be to ask the user at the end 
+if he she/ wants to ask another question or quit the program. I did 
+something similar in my loveletter-game so I can probably adjust the way
+I did it there'''
