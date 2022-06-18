@@ -46,8 +46,9 @@ print(
 '''
 TODO:
 -Starting from here a while True loop can start.
-- at the end of the while loop the user is asked "Do you want to make another
-comparison? If yes choose "yes" if no choose "quit" (use pyInputPlus for this)
+- at the end of the while loop the user is asked "Do you want to make 
+another comparison? If yes choose "yes" if no choose "quit" 
+(use pyInputPlus for this)
 - as soon as "round > 1" (so before "round = 1" must be implemented)...
 
 
@@ -84,8 +85,8 @@ print(
     "Now type in the country (or other entity) you want to compare",
     "the size with")
 
-# The user choses country or entity the first country or entity should be
-# compared with.
+# The user choses country or entity the first country or entity should 
+# be compared with.
 choice_2_input = pyip.inputMenu(['China', 'Egypt', 'Germany', 'Japan',
                                  'Russia', 'USA', 'Vatican City',
                                  'earth surface', 'earth land surface',
@@ -112,8 +113,8 @@ smaller_area = size_dict[smaller_entity]
 
 comparison_factor = size_dict[bigger_entity] / size_dict[smaller_entity]
 
-# making sure that the grammar is correct in the following print statement
-# to show the user the results
+# making sure that the grammar is correct in the following print 
+# statement to show the user the results
 grammar_dict = {"China": 'China',
                 "Egypt": 'Egypt',
                 "Germany": 'Germany',
