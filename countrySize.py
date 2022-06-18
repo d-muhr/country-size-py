@@ -32,10 +32,10 @@ size_dict = {"China": 9596961,
              "Greenland": 2166086,
              "sun surface": 6090000000000}
 
-print('''Did you ever wonder how often Germany fits into another country or even the surface of the moon?
+print(
+    '''Did you ever wonder how often Germany fits into another country or even the surface of the moon?
 
 This program enables you to compare the sizes of 15 countries and other entities! ''')
-
 
 
 '''
@@ -65,9 +65,9 @@ choice_1_input = pyip.inputMenu(['China', 'Egypt', 'Germany', 'Japan',
                                  'earth water surface', 'moon surface',
                                  'jupiter surface', 'European Union',
                                  'Greenland', 'sun surface'], lettered=True,
-                                numbered=False) # input as a string
+                                numbered=False)  # input as a string
 
-#Let user know what he/she chose
+# Let user know what he/she chose
 print("You have chosen", choice_1_input, ".")
 
 
@@ -76,19 +76,21 @@ choice_1_area = size_dict[choice_1_input]
 
 print("Now type in the country (or other entity) you want to compare the size with")
 
-# The user choses country or entity the first country or entity should be compared with.
+# The user choses country or entity the first country or entity should be
+# compared with.
 choice_2_input = pyip.inputMenu(['China', 'Egypt', 'Germany', 'Japan',
                                  'Russia', 'USA', 'Vatican City',
                                  'earth surface', 'earth land surface',
                                  'earth water surface', 'moon surface',
                                  'jupiter surface', 'European Union',
                                  'Greenland', 'sun surface'], lettered=True,
-                                numbered=False) # input as a string
+                                numbered=False)  # input as a string
 # size of the second area
 choice_2_area = size_dict[choice_2_input]
 
 
-# Determining different variables for the following print statement to show the user the results
+# Determining different variables for the following print statement to
+# show the user the results
 if choice_1_area > choice_2_area:
     bigger_entity = choice_1_input
     smaller_entity = choice_2_input
@@ -100,9 +102,10 @@ if choice_2_area > choice_1_area:
 bigger_area = size_dict[bigger_entity]
 smaller_area = size_dict[smaller_entity]
 
-comparison_factor = size_dict[bigger_entity]/ size_dict[smaller_entity]
+comparison_factor = size_dict[bigger_entity] / size_dict[smaller_entity]
 
-# making sure that the grammar is correct in the following print statement to show the user the results
+# making sure that the grammar is correct in the following print statement
+# to show the user the results
 grammar_dict = {"China": 'China',
                 "Egypt": 'Egypt',
                 "Germany": 'Germany',
@@ -119,17 +122,32 @@ grammar_dict = {"China": 'China',
                 "Greenland": 'Greenland',
                 "sun surface": 'the sun\'s surface'}
 
-#size_dict[choice_1_input]
+# size_dict[choice_1_input]
 
 # This gives the user the information he/she asked for.
-print("---RESULT:", grammar_dict[bigger_entity], "is", round(comparison_factor, 2), "times bigger than",
-        grammar_dict[smaller_entity],", nameley", grammar_dict[bigger_entity], "is", f"{bigger_area:,}",
-        "km² and" , grammar_dict[smaller_entity], "is", f"{smaller_area:,}", "km² big.---")
+print(
+    "---RESULT:",
+    grammar_dict[bigger_entity],
+    "is",
+    round(
+        comparison_factor,
+        2),
+    "times bigger than",
+    grammar_dict[smaller_entity],
+    ", nameley",
+    grammar_dict[bigger_entity],
+    "is",
+    f"{bigger_area:,}",
+    "km² and",
+    grammar_dict[smaller_entity],
+    "is",
+    f"{smaller_area:,}",
+    "km² big.---")
 
 
 '''
-(((CURRENTLY IMPOSSIBLE-TODO: ideally the comparison factor would also have a "," in e.g. "1,000" instead of "1000")))  
-however it did not work out (see "v82_NOPE_TRYINGcomparisonFactorWithAcommaAfter3Digits_UNFORTUNATELYnowThereAreNotOnly2DigitsAfterComma_2" 
+(((CURRENTLY IMPOSSIBLE-TODO: ideally the comparison factor would also have a "," in e.g. "1,000" instead of "1000")))
+however it did not work out (see "v82_NOPE_TRYINGcomparisonFactorWithAcommaAfter3Digits_UNFORTUNATELYnowThereAreNotOnly2DigitsAfterComma_2"
 and the ca. 4 versions before. The problem was that either only the "," aspect works or only the 2 digits after comma aspect, even
 though I tried different options with the format etc._30.4.22
 '''
