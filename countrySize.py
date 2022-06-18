@@ -37,9 +37,10 @@ size_dict = {"China": 9596961,
              "sun surface": 6090000000000}
 
 print(
-    '''Did you ever wonder how often Germany fits into another country or even the surface of the moon?
-
-This program enables you to compare the sizes of 15 countries and other entities! ''')
+    "Did you ever wonder how often Germany fits into another country or even",
+    "the surface of the moon?\n",
+    "This program enables you to compare the sizes of 15 countries and other",
+    "entities!")
 
 
 '''
@@ -79,7 +80,9 @@ print("You have chosen", choice_1_input, ".")
 # size of the first area
 choice_1_area = size_dict[choice_1_input]
 
-print("Now type in the country (or other entity) you want to compare the size with")
+print(
+    "Now type in the country (or other entity) you want to compare",
+    "the size with")
 
 # The user choses country or entity the first country or entity should be
 # compared with.
